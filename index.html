@@ -1,70 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="dev-nt-inApp">
 
 <head>
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/styles3.css">
 	<meta charset="UTF-8">
+  <link rel="stylesheet" href="css/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>DevMtin</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,400,600' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+  <title>DevMtin</title>
 </head>
 
-<body>
-	<div class="l-header">
-		<h1>Your Name</h1>
-	</div>
-  
-  <div class="wrapper">  
-    <div>
-      <h2>Profile</h2>
-      <button class="l-btn l-btn-main">Editing :</button>
-    </div>
-
-    <div>      
-
-      <input id="name" type="text" placeholder="Your Name">
-      <br />
-
-      <input id="likes" type="text" placeholder="Likes">
-      <br />
-
-      <input id="favColor" type="text" placeholder="Favorite Color">
-      <br />
-      <button class="l-btn l-btn-success">Save</button>
-      <button class="l-btn l-btn-danger">Delete</button>
-    </div>
+<body ng-controller="mainCtrl"> 
+  <div class="entryView">
+    <header>
+      <button class="leftBtn leftBtnEntryView"></button>
+      <span class="devMountainLogo">DevMountain</span>
+      <button class="rightBtn rightBtnEntryView"></button>
+    </header>
   </div>
-
-  <div class="l-container">
-    <h2>Friends</h2>
-
-    <button class="l-btn l-btn-main">Go</button>
-    <input type="text" placeholder="Find Friends">    
-    <div class="friendList">
-      <span class="closeBtn"></span>
-        My Friends
-      <br />
-      <div class="secondConnection friendList">
-        My Second Connections
-      </div>
-    </div>
-  </div>
+	
+  <footer class="bottom-nav">
+    <button class="nav-btn nav-btn-selected" ng-click="viewFriends">View Friends</button>
+    <button class="nav-btn" ng-click="findFriends">Find Friends</button>
+    <button class="nav-btn" ng-click="updateProfile">Update Profile</button>
+  </footer>
   
-	<div id="myModalMask">
-		<div id="myModal">
-			<div>
-				<div class="modalTitle">
-				<span class="closeBtn"></span>
-					Add Friends
-				</div>
-					<br />
-				<div class="friendList">
-					<span class="friend"></span> Potential Friends
-				</div>
-			</div>
-		</div>
-	</div>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/mainCtrl.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,72 @@
+/*Generic header info*/
+header {
+  position: fixed;
+  display: flex;
+  width: 90%;
+  margin: 0 5%;
+  top: 0;
+  border-bottom: 1px solid #eeeded;
+}
+
+.leftBtn {
+  background-color: #fff;
+  width: 34px;
+}
+
+.devMountainLogo {
+  font-family: "Lora", serif;
+  font-size: 16.8px;
+  line-height: 21px;
+  color: #272727;
+  margin: 0 auto 15px auto;
+}
+
+.rightBtn {
+  margin: 0 5px 0 0;
+  background-color: #fff;
+  width: 34px;
+}
+/*//////////////////////////*/
+
+/*Entry View Styles*/
+  /*Header*/
+  .leftBtnEntryView {
+    background-image: url('../images/icons/Search.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .rightBtnEntryView {
+    background-image: url('../images/icons/Ham.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+
+
+
+/*Bottom nav*/
+.bottom-nav {
+  position: fixed;
+  display: flex;
+  width: 80%;
+  margin: 0 10%;
+  bottom: 0;
+  border-top: 2px solid #d7d7d7;
+}
+
+.nav-btn {
+  margin: 20px auto 5px auto;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "OpenSans-Bold", sans-serif;
+  color: #a9a9a9;
+  background-color: #fff;
+  font-size: 13.2px;
+  line-height: 18px;
+}
+
+.nav-btn-selected {
+  border-bottom: 3px solid #6CF9F0;
+}
+/*//////////////////////////*/
