@@ -1,6 +1,5 @@
 /*Generic header info*/
 header {
-  position: fixed;
   display: flex;
   width: 90%;
   margin: 0 5%;
@@ -41,9 +40,60 @@ header {
     background-repeat: no-repeat;
     background-position: center center;
   }
+  
+  /*Body Styles*/
+    /*Left Div*/
+    .leftDivEntryView {
+      margin: 0 61% 0 7.5%;
+      min-width: 228px;
+    }
+    
+    .leftPDivEntryView {
+      display: block;
+      margin: 45px 0 13px 0;
+    }
+        
+    .leftPEntryView {
+      margin: 0;
+      font-family: "Lora", serif;
+      font-size: 12.07px;
+      line-height:  14px;
+      color: #232323;
+      text-align: center;
+    }
+    
+    .leftPEntryView > span {
+      color: #6CF9F0;
+    }
+    
+    .leftInputEntryView {
+      font-family: "Lora", serif;
+      font-size: 16.8px;
+      line-height: 21px;
+      color: #b6b6b6;
+      border: 1px solid #eeeded;
+      width: 100%;
+      height: 27px;
+      margin: 0 0 8px 0;
+    }
+    
+    #bioEntryView {
+      height: 160px;
+    }
+        
+    .buttonEntryView {
+      font-family: "Lora", serif;
+      font-size: 13.44px;
+      line-height: 17px;
+      color: #9a9a9a;
+      background-color: #74fdf2;
+      width: 99%;
+      margin: 0 .5%;
+      height: 26px;
+    }
 
 
-
+/*/////////////////////////*/
 
 /*Bottom nav*/
 .bottom-nav {
@@ -70,3 +120,34 @@ header {
   border-bottom: 3px solid #6CF9F0;
 }
 /*//////////////////////////*/
+
+/*Generic Styles*/
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fffcf9;
+  display: block;
+}
+
+html {
+  border: 0;
+  margin: 0;
+  padding: 0;}
+
+body {
+  background-color: #fffcf9;
+  position: relative;
+  border: 0;
+  margin: 0;
+  padding: 0;}
