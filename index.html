@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="dev-nt-inApp">
+<html lang="en" ng-app="dev-mt-inApp">
 
 <head>
 	<meta charset="UTF-8">
@@ -10,8 +10,10 @@
   <title>DevMtin</title>
 </head>
 
-<body ng-controller="mainCtrl"> 
-  <div class="entryView">
+<body ng-controller="mainCtrl" ng-switch="page"> 
+  
+  <!--EntryView details///////////////////////////////////////////////-->
+  <div class="entryView" ng-switch-when="entryView">
     <header>
       <button class="leftBtn leftBtnEntryView"></button>
       <span class="devMountainLogo">DevMountain</span>
@@ -31,10 +33,19 @@
     </div>
     
     <div class="rightDivEntryView">
+      <div class="rightDivTopEntryView">
       
+        <div class="rightImgWrapperEV">
+          <div class="rightImgBoxEV">
+            <div class="rightImgPicEV"></div>
+          </div>
+        </div>
+        
+      </div>
     </div>
     
   </div>
+  <!--EntryView Details/////////////////////////////////////////////-->
 	
   <footer class="bottom-nav">
     <button class="nav-btn nav-btn-selected" ng-click="viewFriends">View Friends</button>
@@ -42,9 +53,10 @@
     <button class="nav-btn" ng-click="updateProfile">Update Profile</button>
   </footer>
   
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/mainCtrl.js"></script>
+
 </body>
 
 </html>

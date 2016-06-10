@@ -45,7 +45,9 @@ header {
     /*Left Div*/
     .leftDivEntryView {
       margin: 0 61% 0 7.5%;
+      width: 31.5vw;
       min-width: 228px;
+      float: left;
     }
     
     .leftPDivEntryView {
@@ -91,6 +93,44 @@ header {
       margin: 0 .5%;
       height: 26px;
     }
+    
+    /*Right Div*/
+    .rightDivEntryView {
+      margin: 0 7.5% 0 39%;
+      height: 580px;
+      width: 53.5vw;
+      min-width: 392px;
+      background-color: yellow;
+
+    }
+    
+    .rightImgWrapperEV {
+      margin: 0 auto;
+      overflow: hidden;
+      height: 200px;
+      width: 200px;
+      background-color: red;
+    }
+    
+    .rightImgBoxEV {
+      position: relative;
+      overflow: hidden;
+      transform: rotate(45deg) skew(10deg,10deg);
+      width: 150px;
+      height: 150px;
+      background-color: blue;
+    }
+    
+    .rightImgPicEV {
+      width: 200px;
+      height: 200px;
+      transform: skew(-10deg,-10deg) rotate(-45deg);
+      background-image: url("http://67.media.tumblr.com/f074c650c4e693b986fb40743962350f/tumblr_mkuldeb8EU1qhy6c9o2_400.gif");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: top;
+    }
+
 
 
 /*/////////////////////////*/
@@ -151,3 +191,9 @@ body {
   border: 0;
   margin: 0;
   padding: 0;}
+  
+  #test {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
