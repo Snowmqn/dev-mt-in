@@ -10,6 +10,8 @@ header {
 .leftBtn {
   background-color: #fff;
   width: 34px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .devMountainLogo {
@@ -24,116 +26,137 @@ header {
   margin: 0 5px 0 0;
   background-color: #fff;
   width: 34px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.searchIcon {
+  background-image: url('../images/icons/Search.svg');
+  background-size: 70%;
+  background-position: center center;
+}
+
+.hamIcon {
+  background-image: url('../images/icons/Ham.svg');
+}
+
+.triangleIcon {
+  border-bottom: 1px solid #6CF9F0;
+  margin-bottom: 2px;
 }
 /*//////////////////////////*/
 
 /*Entry View Styles*/
-  /*Header*/
-  .leftBtnEntryView {
-    background-image: url('../images/icons/Search.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
+  /*Left Div*/
+  .leftDivEntryView {
+    margin: 0 61% 0 7.5%;
+    width: 31.5vw;
+    min-width: 228px;
+    float: left;
   }
   
-  .rightBtnEntryView {
-    background-image: url('../images/icons/Ham.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
+  .leftPDivEntryView {
+    display: block;
+    margin: 45px 0 13px 0;
+  }
+      
+  .leftPEntryView {
+    margin: 0;
+    font-family: "Lora", serif;
+    font-size: 12.07px;
+    line-height:  14px;
+    color: #232323;
+    text-align: center;
   }
   
-  /*Body Styles*/
-    /*Left Div*/
-    .leftDivEntryView {
-      margin: 0 61% 0 7.5%;
-      width: 31.5vw;
-      min-width: 228px;
-      float: left;
-    }
-    
-    .leftPDivEntryView {
-      display: block;
-      margin: 45px 0 13px 0;
-    }
-        
-    .leftPEntryView {
-      margin: 0;
-      font-family: "Lora", serif;
-      font-size: 12.07px;
-      line-height:  14px;
-      color: #232323;
-      text-align: center;
-    }
-    
-    .leftPEntryView > span {
-      color: #6CF9F0;
-    }
-    
-    .leftInputEntryView {
-      font-family: "Lora", serif;
-      font-size: 16.8px;
-      line-height: 21px;
-      color: #b6b6b6;
-      border: 1px solid #eeeded;
-      width: 100%;
-      height: 27px;
-      margin: 0 0 8px 0;
-    }
-    
-    #bioEntryView {
-      height: 160px;
-    }
-        
-    .buttonEntryView {
-      font-family: "Lora", serif;
-      font-size: 13.44px;
-      line-height: 17px;
-      color: #9a9a9a;
-      background-color: #74fdf2;
-      width: 99%;
-      margin: 0 .5%;
-      height: 26px;
-    }
-    
-    /*Right Div*/
-    .rightDivEntryView {
-      margin: 0 7.5% 0 39%;
-      height: 580px;
-      width: 53.5vw;
-      min-width: 392px;
-      background-color: yellow;
+  .leftPEntryView > span {
+    color: #6CF9F0;
+  }
+  
+  .leftInputEntryView {
+    font-family: "Lora", serif;
+    font-size: 16.8px;
+    line-height: 21px;
+    color: #b6b6b6;
+    border: 1px solid #eeeded;
+    width: 100%;
+    height: 27px;
+    margin: 0 0 8px 0;
+  }
+  
+  #bioEntryView {
+    height: 160px;
+  }
+      
+  .buttonEntryView {
+    font-family: "Lora", serif;
+    font-size: 13.44px;
+    line-height: 17px;
+    color: #9a9a9a;
+    background-color: #74fdf2;
+    width: 99%;
+    margin: 0 .5%;
+    height: 26px;
+  }
+  
+  /*Right Div*/
+  .rightDivEntryView {
+    margin: 0 7.5% 0 39%;
+    height: 580px;
+    width: 53.5vw;
+    min-width: 392px;
+    background-color: yellow;
 
-    }
-    
-    .rightImgWrapperEV {
-      margin: 0 auto;
-      overflow: hidden;
-      height: 200px;
-      width: 200px;
-      background-color: red;
-    }
-    
-    .rightImgBoxEV {
-      position: relative;
-      overflow: hidden;
-      transform: rotate(45deg) skew(10deg,10deg);
-      width: 150px;
-      height: 150px;
-      background-color: blue;
-    }
-    
-    .rightImgPicEV {
-      width: 200px;
-      height: 200px;
-      transform: skew(-10deg,-10deg) rotate(-45deg);
-      background-image: url("http://67.media.tumblr.com/f074c650c4e693b986fb40743962350f/tumblr_mkuldeb8EU1qhy6c9o2_400.gif");
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position: top;
-    }
+  }
+  
+  .rightImgWrapperEV {
+    margin: 0 auto;
+    overflow: hidden;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+  }
+  
+  #canvasEV {
+    background-color: blue;
+  }
+/*Entry View Close/////////////////////////*/
 
+/*Landing Page Styles///////////////////////////*/
+  /*left Div////////////////////////////////*/
+  .leftDivLP {
+    margin: 0 61% 0 9.5%;
+    width: 29.5vw;
+    min-width: 212px;
+    float: left;
+  }
+  
+  .nameLP {
+    font-family: "Lora", serif;
+    font-size: 38.4px;
+    line-height: 46px;
+    color: #272727;
+  }
+  
+  .taglineLP {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10.2px;
+    line-height: 14px;
+    font-weight: 600;
+    color: #000;
+    text-align: center;
+  }
+  
+  .bioLP {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10.2px;
+    line-height: 14px;
+    color: #000;
+    text-align: justify;
+    text-justify: auto;
+  }
+/*Landing Page Close/////////////////////////////*/
 
-
-/*/////////////////////////*/
 
 /*Bottom nav*/
 .bottom-nav {
@@ -159,7 +182,7 @@ header {
 .nav-btn-selected {
   border-bottom: 3px solid #6CF9F0;
 }
-/*//////////////////////////*/
+/*Bottom Nav End//////////////////////////*/
 
 /*Generic Styles*/
 * {

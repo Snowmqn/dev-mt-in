@@ -1,4 +1,12 @@
 angular.module('dev-mt-inApp').controller('mainCtrl', function($scope) {
-    $scope.page = "entryView"
-        
+    // navigation ///////////////////////////////////////////
+    $scope.page = "landingPage";
+    
+    // navigation close ///////////////////////////////////////
+    
+    //Entry View /////////////////////////////////////////////////
+    
+    //Entry View Close ////////////////////////////////////////
+    
+    
 });

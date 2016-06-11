@@ -15,9 +15,9 @@
   <!--EntryView details///////////////////////////////////////////////-->
   <div class="entryView" ng-switch-when="entryView">
     <header>
-      <button class="leftBtn leftBtnEntryView"></button>
+      <button class="leftBtn searchIcon"></button>
       <span class="devMountainLogo">DevMountain</span>
-      <button class="rightBtn rightBtnEntryView"></button>
+      <button class="rightBtn hamIcon"></button>
     </header>
     
     <div class="leftDivEntryView">
@@ -36,16 +36,40 @@
       <div class="rightDivTopEntryView">
       
         <div class="rightImgWrapperEV">
-          <div class="rightImgBoxEV">
-            <div class="rightImgPicEV"></div>
-          </div>
+          <canvas id="canvasEV"></canvas>
         </div>
         
       </div>
     </div>
     
   </div>
-  <!--EntryView Details/////////////////////////////////////////////-->
+  <!--EntryView Close/////////////////////////////////////////////-->
+  
+  <!--Landing Page //////////////////////////////////////////////////-->
+  <div class="landingPage" ng-switch-when="landingPage">
+    
+    <header>
+      <button class="leftBtn triangleIcon"></button>
+      <span class="devMountainLogo">DevMountain</span>
+      <button class="rightBtn searchIcon"></button>
+    </header>
+    
+    <div class="leftDivLP">
+      <p class="nameLP">Chris Johnson</p>
+      <p class="taglineLP">Some Awesome Tagline About You</p>
+      <p class="bioLP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare risus vel porta imperdiet. Praesent vehicula magna et nibh finibus, et consectetur dolor aliquet. In mollis risus eu luctus pellentesque. Nullam consectetur leo leo, nec facilisis risus varius sed. Vivamus in consectetur massa. Integer tincidunt porta neque eu venenatis. Morbi vestibulum libero nibh, at tristique felis sollicitudin porttitor. Etiam cursus eleifend nunc. Morbi vulputate condimentum lectus et cursus.
+      <br>
+      <br>
+      Donec sit amet euismod dolor. Curabitur suscipit luctus mi quis interdum. In massa ante, rhoncus sit amet odio vel, laoreet sollicitudin massa. Integer sagittis sit amet libero id varius. Curabitur volutpat risus eget felis ultricies, tincidunt rhoncus leo interdum. In finibus faucibus elementum. Maecenas rhoncus, eros id tincidunt consequat, sem magna porta neque, ac hendrerit justo lorem id tortor. </p>
+    </div>
+    
+    <div class="rightDivLP">
+      
+    </div>
+    
+  </div>
+  <!--Landing Page End //////////////////////////////////////////-->
+  
 	
   <footer class="bottom-nav">
     <button class="nav-btn nav-btn-selected" ng-click="viewFriends">View Friends</button>
@@ -56,6 +80,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/mainCtrl.js"></script>
+  <script src="js/triangleImage.js"></script>
 
 </body>
 
